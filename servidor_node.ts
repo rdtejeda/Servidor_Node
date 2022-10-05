@@ -5,11 +5,12 @@ const app = express();
 
 app.set('puerto', 9876);
 
+
 app.get('/', (request:any, response:any)=>{
     response.send('GET - servidor NodeJS');
 });
 
-//AGREGO FILE SYSTEM
+//AGREGO FILE SYSTEM git
 const fs = require('fs');
 
 //AGREGO JSON
@@ -18,7 +19,7 @@ app.use(express.json());
 //INDICO RUTA HACIA EL ARCHIVO
 const path_archivo = "./archivos/productos.txt";
 
-//INDICO RUTA PARA EL ARCHIVO PRODUCTOS-FOTOS
+//INDICO RUTA PARA EL ARCHIVO PRODUCTOS 
 const path_archivo_foto = "./archivos/productos_fotos.txt";
 
 //AGREGO MULTER
